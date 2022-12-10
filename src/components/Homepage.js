@@ -4,17 +4,16 @@ import Navbar from 'react-bootstrap/esm/Navbar'
 import Typewriter from 'typewriter-effect'
 import ContactForm from "./ContactFrom";
 
+const home_json = { contact_me:"If you want to reach out, fill out my contact form below, thanks!",
+                message:"I'm Mujtaba, an aspiring Software Developer", 
+                subtext:"Through the links above, you can find pages displaying my projects, cv, and interests.", 
+                title:"Welcome!"}
 
 export default function Homepage() {
     const [data, setData] = useState()
 
     useEffect(() => {
-        fetch(process.env.REACT_APP_FLASK_HOME)
-            .then(res => res.json())
-            .then(data => {
-                setData(data)
-            })
-            .catch(err => console.error(err))
+        setData(home_json)
     }, [])
 
     const {title,message,subtext,contact_me} = {...data}
