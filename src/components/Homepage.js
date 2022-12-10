@@ -9,7 +9,7 @@ export default function Homepage() {
     const [data, setData] = useState()
 
     useEffect(() => {
-        fetch('http://localhost:5000/home')
+        fetch(process.env.REACT_APP_FLASK_HOME)
             .then(res => res.json())
             .then(data => {
                 setData(data)

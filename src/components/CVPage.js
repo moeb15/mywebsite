@@ -11,7 +11,7 @@ export default function CV(props) {
     const [jsonlist, setJsonList] = useState('')
 
     useEffect(() => {
-        fetch('http://localhost:5000/cv')
+        fetch(process.env.REACT_APP_FLASK_CV)
             .then(res => res.json())
             .then(data => {
                 setJsonList(data)
