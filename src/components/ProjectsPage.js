@@ -28,7 +28,7 @@ export default function Projects() {
                             </ul>
                         </Card.Text>
                         <Card.Text>
-                            Peronsal website where I have my CV and various other things, mostly complete.
+                            Personal website where I have my CV and various other things, mostly complete.
                         </Card.Text>
                     </Card.Body>
                 </Card>
