@@ -14,9 +14,9 @@ export default function Projects() {
                     <Card.Body>
                         <Card.Title className="project-status">Status: In progress</Card.Title>
                         <Card.Title className="project-status">
-                            <a href="https://github.com/moeb15/sortingalgovisualizer" style={{textDecoration:'none', marginRight:'2%'}}>Frontend</a>
+                            <a href="https://github.com/moeb15/mywebsite" style={{textDecoration:'none', marginRight:'2%'}}>Frontend</a>
                              
-                            <a href="https://github.com/moeb15/sortingalgovisualizer" style={{textDecoration:'none'}}>Backend</a>
+                            <a href="https://github.com/moeb15/backend" style={{textDecoration:'none'}}>Backend</a>
                         </Card.Title>
                         <Card.Text>
                             Technologies/Tools Used:
