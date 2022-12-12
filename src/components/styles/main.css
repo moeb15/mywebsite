@@ -47,6 +47,8 @@ body {
     color: white;
 }
 
+
+
 .cv-card {
     margin: auto;
     width: 22vw;
@@ -56,7 +58,8 @@ body {
 }
 
 .cv-text{
-    font-size: 1.5vh;
+    font-size: 0.8vw;
+    margin: auto;
 }
 
 .contact-form{
@@ -109,19 +112,10 @@ body {
     margin-right:5%;
 }
 
-.errors-div{
-    position:absolute;
-    height: 1vh;
-    width: auto;
-    margin-left: 1vw;
-    margin-top: 1vh;
-    padding-bottom: 1vh;
-}
-
 
 .git-logo{
     margin-right: 0.5vw;
-    width: 1.5vw;
+    max-width: 25px;
     filter: invert(0%) sepia(8%) saturate(7466%) hue-rotate(59deg) brightness(97%) contrast(107%);
 }
 
@@ -132,7 +126,7 @@ body {
 
 .linkedin-logo{
     margin-right: 0.5vw;
-    width: 1.5vw;
+    max-width: 25px;
 }
 
 .linkedin-logo:hover{

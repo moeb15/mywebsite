@@ -39,7 +39,7 @@ export default function CV(props) {
         <Container>
             <Card className="bg-transparent text-white cv-card">
                 <Card.Img src={experience} alt="Card image" />
-                <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '10vh' }}>
+                <Card.ImgOverlay  className="cv-img" style={{ textAlign: 'center', paddingTop: '10vh' }}>
                     <Card.Title className='w3-animate-opacity cv-text'>Skills</Card.Title>
                     <Card.Text className='w3-animate-opacity cv-text'>{programming}</Card.Text>
                     <Card.Text className='w3-animate-opacity cv-text'>{testing}</Card.Text>
@@ -64,7 +64,7 @@ export default function CV(props) {
                     </Card.ImgOverlay>
                 </Card>
             </Container>
-            <Container>
+            
                 <Card className="bg-transparent text-white cv-card">
                     <Card.Img src={edulogo} alt="Card image" />
                     <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '10vh' }}>
@@ -72,7 +72,7 @@ export default function CV(props) {
                         <Card.Text className='w3-animate-opacity cv-text'>{jsonlist[2]?.data}</Card.Text>
                     </Card.ImgOverlay>
                 </Card>
-            </Container>
+            
             <FooterNavBar />
         </Container>)
 }
