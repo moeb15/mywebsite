@@ -65,7 +65,7 @@ body {
 .contact-form{
     margin:auto;
     height: 50% !important;
-    width:35%;
+    width:max(300px,35vw);
     margin-top: 1%;
     padding-bottom: auto;
 }
