@@ -29,19 +29,17 @@ export default function CV(props) {
     const [jsonlist, setJsonList] = useState('')
 
     useEffect(() => {
-        fetch(process.env.REACT_APP_FLASK_CV)
         setJsonList(cv_json)
-    }
-        , [])
+    }, [])
 
     const { ides, programming, testing } = { ...jsonlist[0] }
     const { Opentext, WISL } = { ...jsonlist[1] }
 
     return (
-        <Container >
+        <Container>
             <Card className="bg-transparent text-white cv-card">
                 <Card.Img src={experience} alt="Card image" />
-                <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '25%' }}>
+                <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '10vh' }}>
                     <Card.Title className='w3-animate-opacity cv-text'>Skills</Card.Title>
                     <Card.Text className='w3-animate-opacity cv-text'>{programming}</Card.Text>
                     <Card.Text className='w3-animate-opacity cv-text'>{testing}</Card.Text>
@@ -51,7 +49,7 @@ export default function CV(props) {
             <Container className="d-flex">
                 <Card className="bg-transparent text-white cv-card">
                     <Card.Img src={joblogo} alt="Card image" />
-                    <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '15%' }}>
+                    <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '5vh' }}>
                         <Card.Title className='w3-animate-opacity cv-text'>Experience</Card.Title>
                         <Card.Text className='w3-animate-opacity cv-text'>{Opentext?.company}, {Opentext?.job_title}</Card.Text>
                         <Card.Text className='w3-animate-opacity cv-text'>{Opentext?.job_responsibilities}</Card.Text>
@@ -59,7 +57,7 @@ export default function CV(props) {
                 </Card>
                 <Card className="bg-transparent text-white cv-card">
                     <Card.Img src={joblogo} alt="Card image" />
-                    <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '15%' }}>
+                    <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '5vh' }}>
                         <Card.Title className='w3-animate-opacity cv-text'>Experience</Card.Title>
                         <Card.Text className='w3-animate-opacity cv-text'>{WISL?.company}, {WISL?.job_title}</Card.Text>
                         <Card.Text className='w3-animate-opacity cv-text'>{WISL?.job_responsibilities}</Card.Text>
@@ -69,7 +67,7 @@ export default function CV(props) {
             <Container>
                 <Card className="bg-transparent text-white cv-card">
                     <Card.Img src={edulogo} alt="Card image" />
-                    <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '25%' }}>
+                    <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '10vh' }}>
                         <Card.Title className='w3-animate-opacity cv-text'>Education</Card.Title>
                         <Card.Text className='w3-animate-opacity cv-text'>{jsonlist[2]?.data}</Card.Text>
                     </Card.ImgOverlay>

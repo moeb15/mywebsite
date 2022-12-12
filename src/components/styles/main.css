@@ -49,7 +49,7 @@ body {
 
 .cv-card {
     margin: auto;
-    width: 35%;
+    width: 22vw;
     border: none !important;
     padding-left: '2%';
     padding-right: '2%';
@@ -63,7 +63,8 @@ body {
     margin:auto;
     height: 50% !important;
     width:35%;
-    margin-top: 3%;
+    margin-top: 1%;
+    padding-bottom: auto;
 }
 
 .contact-text{
@@ -71,7 +72,14 @@ body {
 }
 
 .contact-navbar{
-    height:50% !important;
+    height: 45% !important;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.contact-navbar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 .project-cards{
@@ -82,6 +90,11 @@ body {
     margin-left:5%;
     margin-right: 5%;
     border-radius: 8px !important;
+    font-size: 1.5vh;
+}
+
+.project-status{
+    font-size: 1.5vh !important;
 }
 
 .interests-text{

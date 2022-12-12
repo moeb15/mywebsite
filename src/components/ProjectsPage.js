@@ -12,14 +12,17 @@ export default function Projects() {
                 <Card bg='text-light project-cards'>
                     <Card.Header>Personal Website</Card.Header>
                     <Card.Body>
-                        <Card.Title>Status: In progress</Card.Title>
+                        <Card.Title className="project-status">Status: In progress</Card.Title>
+                        <Card.Title className="project-status">
+                            <a href="https://github.com/moeb15/sortingalgovisualizer" style={{textDecoration:'none', marginRight:'2%'}}>Frontend</a>
+                             
+                            <a href="https://github.com/moeb15/sortingalgovisualizer" style={{textDecoration:'none'}}>Backend</a>
+                        </Card.Title>
                         <Card.Text>
                             Technologies/Tools Used:
                             <ul>
                                 <li>Python</li>
                                 <li>Flask</li>
-                                <li>SQLAlchemy</li>
-                                <li>PostgreSQL</li>
                                 <li>JavaScript</li>
                                 <li>React</li>
                             </ul>
@@ -32,7 +35,7 @@ export default function Projects() {
                 <Card bg='text-light project-cards'>
                     <Card.Header>Social Media Website</Card.Header>
                     <Card.Body>
-                        <Card.Title>Status: In progress</Card.Title>
+                        <Card.Title className="project-status">Status: In progress</Card.Title>
                         <Card.Text>
                             Technologies Used:
                             <ul>
@@ -53,7 +56,10 @@ export default function Projects() {
                 <Card bg='text-light project-cards'>
                     <Card.Header>Sorting Algorithm Visualizer</Card.Header>
                     <Card.Body>
-                        <Card.Title>Status: Complete</Card.Title>
+                        <Card.Title className="project-status">Status: Complete</Card.Title>
+                        <Card.Title className="project-status">
+                            <a href="https://github.com/moeb15/sortingalgovisualizer" style={{textDecoration:'none'}}>Repository</a>
+                        </Card.Title>
                         <Card.Text>
                             Technologies Used:
                             <ul>
