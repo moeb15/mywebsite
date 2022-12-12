@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from 'react-bootstrap/Card'
 import Container from "react-bootstrap/esm/Container";
+import CardGroup from 'react-bootstrap/esm/CardGroup'
 import experience from './assets/codebrackets.png'
 import joblogo from './assets/joblogo.png'
 import edulogo from './assets/educationlogo.png'
@@ -46,7 +47,7 @@ export default function CV(props) {
                     <Card.Text className='w3-animate-opacity cv-text'>{ides}</Card.Text>
                 </Card.ImgOverlay>
             </Card>
-            <Container className="d-flex">
+            <CardGroup>
                 <Card className="bg-transparent text-white cv-card">
                     <Card.Img src={joblogo} alt="Card image" />
                     <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '5vh' }}>
@@ -63,8 +64,7 @@ export default function CV(props) {
                         <Card.Text className='w3-animate-opacity cv-text'>{WISL?.job_responsibilities}</Card.Text>
                     </Card.ImgOverlay>
                 </Card>
-            </Container>
-            
+            </CardGroup>
                 <Card className="bg-transparent text-white cv-card">
                     <Card.Img src={edulogo} alt="Card image" />
                     <Card.ImgOverlay style={{ textAlign: 'center', paddingTop: '10vh' }}>

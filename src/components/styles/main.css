@@ -51,14 +51,14 @@ body {
 
 .cv-card {
     margin: auto;
-    width: 22vw;
+    max-width: 400px;
     border: none !important;
     padding-left: '2%';
     padding-right: '2%';
 }
 
 .cv-text{
-    font-size: 0.8vw;
+    font-size: max(0.8vw,13px);
     margin: auto;
 }
 
