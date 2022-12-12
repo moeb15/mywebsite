@@ -8,10 +8,6 @@
 
 }
 
-html {
-    height: 100%;
-}
-
 body {
     height: 100%;
     background: no-repeat;
@@ -59,8 +55,13 @@ body {
     padding-right: '2%';
 }
 
+.cv-text{
+    font-size: 1.5vh;
+}
+
 .contact-form{
     margin:auto;
+    height: 50% !important;
     width:35%;
     margin-top: 3%;
 }
@@ -70,12 +71,12 @@ body {
 }
 
 .contact-navbar{
-    height:50%;
+    height:50% !important;
 }
 
 .project-cards{
     background-color: #7DF9FF !important;
-    width:45%;
+    width:auto;
     margin:auto;
     margin-top:5%;
     margin-left:5%;
@@ -92,21 +93,22 @@ body {
     margin:auto;
     margin-top:5%;
     margin-left:2%;
+    margin-right:5%;
 }
 
 .errors-div{
     position:absolute;
-    margin-left: 10%;
-    margin-top:2%;
-    padding-bottom: 5%;
+    height: 1vh;
+    width: auto;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 
 .git-logo{
-    display: inline-block;
-    background-repeat: no-repeat;
-    margin-left: 100%;
-    max-width: 70%;
+    margin-right: 0.5vw;
+    width: 1.5vw;
     filter: invert(0%) sepia(8%) saturate(7466%) hue-rotate(59deg) brightness(97%) contrast(107%);
 }
 
@@ -116,10 +118,8 @@ body {
 }
 
 .linkedin-logo{
-    display: inline-block;
-    margin-top:8%;
-    margin-left: -130%;
-    width: 75%;
+    margin-right: 0.5vw;
+    width: 1.5vw;
 }
 
 .linkedin-logo:hover{
