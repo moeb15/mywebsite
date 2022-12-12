@@ -36,6 +36,9 @@ export default function Projects() {
                     <Card.Header>Social Media Website</Card.Header>
                     <Card.Body>
                         <Card.Title className="project-status">Status: In progress</Card.Title>
+                        <Card.Title className="project-status">
+                            <a href="https://github.com/moeb15/smwebsiteproject_backend" style={{textDecoration:'none'}}>Backend</a>
+                        </Card.Title>
                         <Card.Text>
                             Technologies Used:
                             <ul>
